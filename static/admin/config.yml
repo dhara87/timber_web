@@ -1,0 +1,112 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "static/images"
+collections:
+  - name: "index" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "index" # Used in the UI, ie.: "New Post"
+    folder: "content/english" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+
+    # slider
+      - { label: "Slider 1 Image", name: "slider1_image_url", widget: "image" }
+      - { label: "Slider 1 Title", name: "slider1_title", widget: "string" }
+      - { label: "Slider 2 Image", name: "slider2_image_url", widget: "image" }
+      - { label: "Slider 2 Title", name: "slider2_title", widget: "string" }
+      - { label: "Slider 3 Image", name: "slider3_image_url", widget: "image" }
+      - { label: "Slider 3 Title", name: "slider3_title", widget: "string" }
+
+      # statistics
+      - { label: "Statistics Title1", name: "statistics_title1", widget: "string" }
+      - { label: "Statistics Content1", name: "statistics_content1", widget: "text" }
+      - { label: "Statistics Title2", name: "statistics_title2", widget: "string" }
+      - { label: "Statistics Content2", name: "statistics_content2", widget: "text" }
+      - { label: "Statistics Title3", name: "statistics_title3", widget: "string" }
+      - { label: "Statistics Content3", name: "statistics_content3", widget: "text" }
+
+      # business
+      - { label: "Business Title", name: "business_title", widget: "string" }
+      - { label: "Business Sub Title", name: "business_sub_title", widget: "string" }
+      - { label: "Business Image", name: business_image_url, widget: image}
+
+      # about
+      - { label: "About title1", name: "about_title1", widget: "string" }
+      - { label: "About Content1", name: "about_content1", widget: "text" }
+      - { label: "About title2", name: "about_title2", widget: "string" }
+      - { label: "About Content2", name: "about_content2", widget: "text" }
+      - { label: "About title3", name: "about_title3", widget: "string" }
+      - { label: "About Content3", name: "about_content3", widget: "text" }
+
+      # team
+      - { label: "Team Title", name: "team_title", widget: "string" }
+      - { label: "Team Sub Title", name: "team_subtitle", widget: "string" }
+
+      # team people section
+      - { label: Team Image 1, name: team_image_1, widget: image}
+      - { label: "Team Name 1", name: "team_name_1", widget: "string" }
+      - { label: "Team Designation 1", name: "team_designation_1", widget: "string" }
+      - { label: "Team DeContent 1", name: "team_content_1", widget: "text" }
+      - { label: Team Image 2, name: team_image_2, widget: image}
+      - { label: "Team Name 2", name: "team_name_2", widget: "string" }
+      - { label: "Team Designation 2", name: "team_designation_2", widget: "string" }
+      - { label: "Team DeContent 2", name: "team_content_2", widget: "text" }
+      - { label: Team Image 3, name: team_image_3, widget: image}
+      - { label: "Team Name 3", name: "team_name_3", widget: "string" }
+      - { label: "Team Designation 3", name: "team_designation_3", widget: "string" }
+      - { label: "Team DeContent 3", name: "team_content_3", widget: "text" }
+
+      # chart
+      - { label: "Chart Name 1", name: "chart_name_1", widget: "string" }
+      - { label: "Chart Content 1", name: "chart_content_1", widget: "text" }
+      - { label: "Chart Name 2", name: "chart_name_2", widget: "string" }
+      - { label: "Chart Content 2", name: "chart_content_2", widget: "text" }
+      - { label: "Chart Name 3", name: "chart_name_3", widget: "string" }
+      - { label: "Chart Content 3", name: "chart_content_3", widget: "text" }
+      - { label: "Chart Name 4", name: "chart_name_4", widget: "string" }
+      - { label: "Chart Content 4", name: "chart_content_4", widget: "text" }
+
+      # testmonial
+      - { label: Testimonial Title, name: testimonial_title, widget: string}
+      - { label: Testimonial 1 Image, name: testimonial1_image, widget: image}
+      - { label: Testimonial 1 Name, name: testimonial1_name, widget: string}
+      - { label: Testimonial 1 Content, name: testimonial1_content, widget: text}
+      - { label: Testimonial 2 Image, name: testimonial2_image, widget: image}
+      - { label: Testimonial 2 Name, name: testimonial2_name, widget: string}
+      - { label: Testimonial 2 Content, name: testimonial2_content, widget: text}
+      - { label: Testimonial 3 Image, name: testimonial3_image, widget: image}
+      - { label: Testimonial 3 Name, name: testimonial3_name, widget: string}
+      - { label: Testimonial 3 Content, name: testimonial3_content, widget: text}
+      - { label: Testimonial 4 Image, name: testimonial4_image, widget: image}
+      - { label: Testimonial 4 Name, name: testimonial4_name, widget: string}
+      - { label: Testimonial 4 Content, name: testimonial4_content, widget: text}
+
+      # projects
+      - { label: Project Main Title, name: project_title, widget: string}
+      - { label: "Project Sub Title", name: "project_subtitle", widget: "string" }
+      - { label: Project 1 Image, name: project_image_1, widget: text}
+      - { label: "Project 1 Content", name: "project_content_1", widget: "string" }
+      - { label: Project 2 Image, name: project_image_2, widget: text}
+      - { label: "Project 2 Content", name: "project_content_2", widget: "string" }
+      - { label: Project 3 Image, name: project_image_3, widget: text}
+      - { label: "Project 3 Content", name: "project_content_3", widget: "string" }
+      - { label: Project 4 Image, name: project_image_4, widget: text}
+      - { label: "Project 4 Content", name: "project_content_4", widget: "string" }
+      - { label: Project 5 Image, name: project_image_5, widget: text}
+      - { label: "Project 5 Content", name: "project_content_5", widget: "string" }
+      - { label: Project 6 Image, name: project_image_6, widget: text}
+      - { label: "Project 6 Content", name: "project_content_6", widget: "string" }
+      - { label: Project 7 Image, name: project_image_7, widget: text}
+      - { label: "Project 7 Content", name: "project_content_7", widget: "string" }
+      - { label: Project 8 Image, name: project_image_8, widget: text}
+      - { label: "Project 8 Content", name: "project_content_8", widget: "string" }
+      - { label: Project 9 Image, name: project_image_9, widget: text}
+      - { label: "Project 9 Content", name: "project_content_9", widget: "string" }
+
+      # news
+      - { label: "News Title", name: "news_title", widget: "string" }
+      - { label: "News Sub Title", name: "news_subtitle", widget: "string" }
+
+      # content
+      - { label: "Content Title", name: "contact_title", widget: "string" }
+      - { label: "Content Sub Title", name: "contact_subtitle", widget: "string" }
